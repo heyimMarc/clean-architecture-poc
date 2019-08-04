@@ -1,0 +1,13 @@
+rootProject.name = 'clean-architecture-example'
+
+include ':config'
+include ':domain'
+include ':usecase'
+include ':controller'
+
+include ':micronaut'
+
+project(":controller").projectDir = file("adapter/controller")
+
+project(":micronaut").projectDir = file("application/micronaut")
+

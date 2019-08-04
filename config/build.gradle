@@ -1,0 +1,11 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'marcnuetzel.example.config'
+
+dependencies {
+	implementation(
+		project(':usecase'),
+		project(':domain'),
+		project(':controller'),
+	)
+}
